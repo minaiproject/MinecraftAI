@@ -38,3 +38,44 @@ MinecraftAi/
 ├── utils/                    # Helper functions and configuration files
 ├── main.py                   # Main entry point for running agents
 └── README.md                 # Project documentation
+
+---
+
+## Getting Started
+
+### 1. Clone the Repository
+
+Clone the repository to your local machine.
+
+```bash
+git clone https://github.com/
+
+Getting Started
+1. Clone the Repository
+Clone the repository to your local machine.
+
+bash
+Copy code
+git clone https://github.com/yourusername/minecraft_ai.git
+2. Install Dependencies
+Use the requirements.txt file to install all necessary libraries.
+
+bash
+Copy code
+pip install -r requirements.txt
+3. Deploy Solana Contracts
+Follow the instructions in smart_contracts/deploy_contracts.py to deploy the necessary smart contracts on Solana.
+
+4. Run Agents in Minecraft
+Use main.py to initiate and manage AI agents within your Minecraft environment.
+
+Contributing
+We welcome contributions to help expand Minecraft Ai. Developers, AI enthusiasts, and Solana experts are encouraged to propose new features, submit pull requests, or join discussions. Let’s build the future of AI in Minecraft together!
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+With Minecraft Ai, you’re not just playing Minecraft; you’re shaping an intelligent, interactive ecosystem powered by decentralized technology. Join us in building the future of gameplay with AI-driven innovation!
+
+
+
