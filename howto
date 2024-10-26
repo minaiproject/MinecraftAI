@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Ai User Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #0057b8;
+        }
+        code {
+            background-color: #e9e9e9;
+            padding: 2px 4px;
+            font-size: 1em;
+            color: #d63384;
+        }
+        pre {
+            background-color: #e9e9e9;
+            padding: 10px;
+            overflow-x: auto;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Minecraft Ai User Guide</h1>
+        
+        <div class="section">
+            <h2>Project Overview</h2>
+            <p>
+                <strong>Minecraft Ai</strong> is a decentralized project that integrates AI-powered agents within the Minecraft world, using the Solana blockchain. The project enables players to use $MINAI tokens to access, upgrade, and customize intelligent agents, enhancing gameplay with automation and intelligent assistance.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>Getting Started</h2>
+            <ol>
+                <li><strong>Clone the Repository</strong>
+                    <pre><code>git clone https://github.com/minaiproject/MinecraftAI.git</code></pre>
+                </li>
+                <li><strong>Install Dependencies</strong>
+                    <p>Use the provided <code>requirements.txt</code> file to install all necessary libraries:</p>
+                    <pre><code>pip install -r requirements.txt</code></pre>
+                </li>
+                <li><strong>Deploy Solana Contracts</strong>
+                    <p>Run the deployment script to set up necessary smart contracts on Solana:</p>
+                    <pre><code>python smart_contracts/deploy_contracts.py</code></pre>
+                </li>
+                <li><strong>Run Agents in Minecraft</strong>
+                    <p>Launch the main script to start agents in Minecraft:</p>
+                    <pre><code>python main.py</code></pre>
+                </li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Project Structure</h2>
+            <pre><code> 
+MinecraftAi/
+├── ai_agents/                # Agent classes and behaviors
+│   ├── resource_gatherer.py   # Agent for gathering resources
+│   ├── builder.py             # Agent for building structures
+│   └── explorer.py            # Agent for exploration
+├── smart_contracts/          # Blockchain contracts and deployment script
+│   ├── contracts/             # Solana smart contracts
+│   └── deploy_contracts.py    # Deployment script
+├── data_processing/          # Data collection and preprocessing
+│   ├── collect_gameplay_data.py  # Script to gather gameplay data
+│   └── preprocess_data.py     # Data preprocessing for AI training
+├── models/                   # AI model definitions and training scripts
+│   ├── agent_model.py         # Model architecture for agents
+│   └── train_model.py         # Training script
+├── utils/                    # Helper functions and configuration
+│   ├── config.py              # Project configuration
+│   └── solana_utils.py        # Utility functions for Solana interactions
+├── main.py                   # Main entry point for running agents
+└── README.md                 # Project documentation
+            </code></pre>
+        </div>
+
+        <div class="section">
+            <h2>Using the AI Agents</h2>
+            <p>The project includes several AI agent types, each designed for specific tasks:</p>
+            <ul>
+                <li><strong>Resource Gatherer</strong>: Collects resources like wood, stone, etc.
+                    <pre><code>python -c "from ai_agents.resource_gatherer import ResourceGatherer; ResourceGatherer('RG01', 'wood').gather_resources()"</code></pre>
+                </li>
+                <li><strong>Builder</strong>: Constructs structures within Minecraft.
+                    <pre><code>python -c "from ai_agents.builder import Builder; Builder('B01').build_structure('house')"</code></pre>
+                </li>
+                <li><strong>Explorer</strong>: Explores the game area autonomously.
+                    <pre><code>python -c "from ai_agents.explorer import Explorer; Explorer('E01').explore_area('cave')"</code></pre>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Training AI Models</h2>
+            <p>To improve agent performance, use the following scripts:</p>
+            <ul>
+                <li><strong>Collect Gameplay Data</strong>: Collects data for training.
+                    <pre><code>python data_processing/collect_gameplay_data.py</code></pre>
+                </li>
+                <li><strong>Preprocess Data</strong>: Prepares data for training.
+                    <pre><code>python data_processing/preprocess_data.py</code></pre>
+                </li>
+                <li><strong>Train the Model</strong>: Trains the AI model using preprocessed data.
+                    <pre><code>python models/train_model.py</code></pre>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Configuration</h2>
+            <p>Project settings, including Solana configurations and model paths, can be customized in <code>utils/config.py</code>:</p>
+            <pre><code> 
+class Config:
+    SOLANA_RPC_URL = "https://api.mainnet-beta.solana.com"
+    CONTRACT_ADDRESS = "YourContractAddressHere"
+    DATA_DIR = "data/"
+    MODEL_SAVE_PATH = "models/agent_model.pth"
+</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>Contributing</h2>
+            <p>We welcome contributions! Please feel free to submit issues, propose new features, or join discussions to help us grow *Minecraft Ai*.</p>
+        </div>
+
+        <div class="section">
+            <h2>License</h2>
+            <p>This project is licensed under the MIT License. See the <code>LICENSE</code> file for details.</p>
+        </div>
+
+        <footer>
+            <p><strong>Join us in building the future of AI in Minecraft!</strong></p>
+        </footer>
+    </div>
+</body>
+</html>
