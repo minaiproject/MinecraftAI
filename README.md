@@ -39,24 +39,13 @@ MinecraftAi/
 ├── main.py                   # Main entry point for running agents
 └── README.md                 # Project documentation
 
----
-
-## Getting Started
-
-### 1. Clone the Repository
-
-Clone the repository to your local machine.
-
-```bash
-git clone https://github.com/
-
 Getting Started
 1. Clone the Repository
 Clone the repository to your local machine.
 
 bash
 Copy code
-git clone https://github.com/yourusername/minecraft_ai.git
+git clone https://github.com/minaiproject/MinecraftAI.git
 2. Install Dependencies
 Use the requirements.txt file to install all necessary libraries.
 
